@@ -1,11 +1,11 @@
-﻿using System.Globalization;
+﻿//using System.Globalization;
 
 var outputString = "Hello world";
 Console.WriteLine(outputString);
 
 float decimalValue = 0.3f; //(0.3f)
 Console.WriteLine(decimalValue); 
-Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+//Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 
 bool isAwesome = true;
 Console.WriteLine(isAwesome);
