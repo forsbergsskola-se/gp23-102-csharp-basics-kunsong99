@@ -15,8 +15,6 @@ Console.WriteLine(iNumber);  // this line will not be executed
 
 
 
-
-
 // int i = 5;
 // double d = i; // assigning - implicit convert
 
