@@ -42,6 +42,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciseBonus2", "ExerciseB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P8Boolean", "P8Boolean\P8Boolean.csproj", "{26019A55-CB3B-455D-8F31-D4ED56571F1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P9IfElse", "P9IfElse\P9IfElse.csproj", "{4EF828B5-8D1D-42C0-A25B-F1D5914B3291}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -132,5 +134,9 @@ Global
 		{26019A55-CB3B-455D-8F31-D4ED56571F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26019A55-CB3B-455D-8F31-D4ED56571F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26019A55-CB3B-455D-8F31-D4ED56571F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EF828B5-8D1D-42C0-A25B-F1D5914B3291}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF828B5-8D1D-42C0-A25B-F1D5914B3291}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF828B5-8D1D-42C0-A25B-F1D5914B3291}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF828B5-8D1D-42C0-A25B-F1D5914B3291}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

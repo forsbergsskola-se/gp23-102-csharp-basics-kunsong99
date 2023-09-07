@@ -11,3 +11,4 @@ int minutes = seconds/60;
 int reminder = seconds%60;
 
 Console.WriteLine($"{userInput}seconds is {minutes} minutes and {reminder} seconds");
+
