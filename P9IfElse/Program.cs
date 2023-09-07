@@ -21,7 +21,7 @@ else
 }
 */
 
-string result = age < 13 ? "You are a child!" : age < 19 ? "You are a teenager!" : "You are a grown-up!";
+string result = age < 13 ? "You are a child!" : age <= 19 ? "You are a teenager!" : "You are a grown-up!";
     
 Console.WriteLine(result);
     
