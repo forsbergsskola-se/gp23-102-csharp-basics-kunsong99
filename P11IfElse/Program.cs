@@ -1,42 +1,26 @@
-﻿
-Console.WriteLine("What's your age?");
-string userInput = Console.ReadLine();
+﻿Console.WriteLine("What's your age?");
+string ageInput = Console.ReadLine();
+int age = int.Parse(ageInput);
 
-int age = int.Parse(userInput);
-
-/*
-if (age < 13)
+if (age <= 12)
 {
     Console.WriteLine("You are a child!");
 }
 else if (age <= 19)
 {
     Console.WriteLine("You are a teenager!");
-
 }
 else
 {
     Console.WriteLine("You are a grown-up!");
 }
-*/
 
-string result = age < 13 ? "You are a child!" : age <= 19 ? "You are a teenager!" : "You are a grown-up!";
-    
-Console.WriteLine(result);
-    
 Console.WriteLine("Give me another integer.");
-string userInput2 = Console.ReadLine();
-int number2 = int.Parse(userInput2);
+string numberInput = Console.ReadLine();
+int number = int.Parse(numberInput);
 
-int max;
-if (age > number2)
-{
-    max = age;
-}
-else
-{
-    max = number2;
-}
+int max = age > number ? age : number;
+
 Console.WriteLine($"The maximum is {max} .");
 
 if (max % 2 == 1)
