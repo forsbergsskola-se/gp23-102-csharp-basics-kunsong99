@@ -15,9 +15,9 @@ for (i = 0; i < drawLeft; i++)
 }
 Console.Write($"( {drawLeft})\n");
 
-
 Console.WriteLine("AI goes first.");
-while (drawLeft >1)
+DRAW_MATCH:
+if (drawLeft >1)
 {
     //AI's turn
     // Random rnd = new Random();
@@ -51,7 +51,7 @@ while (drawLeft >1)
     if (drawLeft == 1)
     {
         Console.WriteLine("You lose!");
-        break;
+        goto GAME_END;
     }
     
     USER_TURN:
@@ -73,6 +73,9 @@ while (drawLeft >1)
     if (drawLeft == 1)
     {
         Console.WriteLine("You win!");
-        break;
+        goto GAME_END;
     }
+    goto DRAW_MATCH;
 }
+
+GAME_END: ;
