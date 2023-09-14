@@ -16,6 +16,7 @@ for (i = 0; i < drawLeft; i++)
 Console.Write($"( {drawLeft})\n");
 
 Console.WriteLine("AI goes first.");
+
 DRAW_MATCH:
 if (drawLeft >1)
 {
@@ -23,18 +24,15 @@ if (drawLeft >1)
     // Random rnd = new Random();
     if (drawLeft > 4)
     {
-        if (drawLeft % 4 > 1  )
-        {
-            aiDrawNumber = drawLeft % 4 - 1; 
-        }
-        // else if (drawLeft % 4 == 1)
+        aiDrawNumber = drawLeft % 4 > 1 ? drawLeft % 4 - 1 : 3;
+        // if (drawLeft % 4 > 1  )
         // {
-        //     aiDrawNumber =  rnd.Next(1, 3) ; 
+        //     aiDrawNumber = drawLeft % 4 - 1; 
         // }
-        else
-        {
-            aiDrawNumber = 3 ; 
-        }
+        // else
+        // {
+        //     aiDrawNumber = 3 ; 
+        // }
     }
     else
     {
