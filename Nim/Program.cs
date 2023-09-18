@@ -52,16 +52,28 @@ if (drawLeft >1)
         goto GAME_END;
     }
     
-    USER_TURN:
+    /*USER_TURN:
     Console.WriteLine("How many matches do you want to draw?");
     userInput = Console.ReadLine();
     if (userInput != "1" && userInput != "2" && userInput != "3")
     {
         Console.WriteLine("Invalid input. Please input a number between 1 and 3.");
         goto USER_TURN;
+    }*/
+    
+    //Use int.TryParse() for input validation
+    Console.WriteLine("How many matches do you want to draw?");
+    TryAgain:
+    if(!int.TryParse(Console.ReadLine(), out int userDrawNumber)){
+        Console.Write("Invalid input. Please input a number between 1 and 3.\n");
+        goto TryAgain;
     }
-
-    int userDrawNumber = int.Parse(userInput);
+    if( userDrawNumber < 1 || userDrawNumber > 3){
+        Console.Write("Invalid input. Please input a number between 1 and 3.\n");
+        goto TryAgain;
+    }
+    
+    //int userDrawNumber = int.Parse(userInput);
     drawLeft -= userDrawNumber;
     for (i = 0; i < drawLeft; i++)
     {
